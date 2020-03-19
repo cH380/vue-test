@@ -8,6 +8,11 @@ const demo101 = () => import('@/views/demo/demo101')
 // const a404 = () => import('@/view/demo/a404')
 
 const routes = [
+  {
+    path: '/',
+    redirect: '/s1',
+    hidden: true
+  },
   // testio文件夹下面的
   {
     path: '/ahome/home/:id?',
