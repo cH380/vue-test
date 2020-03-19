@@ -6,12 +6,18 @@ Vue.use(VueRouter)
 const demo1 = () => import('@/views/demo/demo1')
 const demo101 = () => import('@/views/demo/demo101')
 // const a404 = () => import('@/view/demo/a404')
-
+const flvPlayer = () => import('@/views/flv/flvPlayer')
 const routes = [
   {
     path: '/',
     redirect: '/s1',
     hidden: true
+  },
+  // flv文件夹下面的
+  {
+    path: '/flvPlayer/:id?',
+    name: 'FlvPlayer',
+    component: flvPlayer
   },
   // testio文件夹下面的
   {
